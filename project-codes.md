@@ -18,6 +18,8 @@
 
 ### DN - 研究室関連（Department/Laboratory）
 - **DN001_疋田研**: 疋田研究室関連のプロジェクト
+- **DN002_Learningrate**: 学習率に関する研究プロジェクト
+- **DN003_MemoryandReward**: 記憶と報酬に関する研究プロジェクト
 
 ### MD - 医師業務関連
 - **MD001_医師業務**: 医師業務に関するプロジェクト
@@ -28,9 +30,19 @@
 ### ST - 留学関連（Study abroad）
 - **ST001_海外留学**: 海外留学準備・申請に関するプロジェクト
 
+### WD - Web Development（ウェブ開発）
+- **WD102_NeedsExplorer**: ニーズ探索・要件定義支援ツール
+- **WD103_EmployeeSimulation**: 従業員シミュレーションツール
+- **WD104_AssetManagement**: 資産管理システム
+- **WD105_ClaudeTools**: Claude関連ツール・ログビューアー
+- **WD107_PACVisualizer**: PAC（Phase-Amplitude Coupling）可視化ツール
+
 ### YA - 特定研究プロジェクト
 - **YA001_頭部外傷研究**: 頭部外傷に関する研究プロジェクト
 - **YA002_MSAハンチントン研究**: MSA（多系統萎縮症）・ハンチントン病研究プロジェクト
+
+### AD - Administration（事務・管理）
+- **AD001_SSD_Migration_Archive**: SSD移行用アーカイブ（個人文書等）
 
 ### 注意事項
 - **PC2025**: プロジェクトコードではない（当直中B/TRACS/TRACS template/内に存在する別の項目）
@@ -51,6 +63,15 @@
 - **FN**: Finance（財務・資金管理）
 - **DN**: Department/Laboratory（研究室関連、既に使用中）
 
+## 欠番管理
+
+### WDカテゴリ
+- **WD100-WD101**: 予約済み（将来の基幹プロジェクト用）
+- **WD106**: 未使用（WD107を先に作成したため）
+
+### その他のカテゴリ
+- 各カテゴリで欠番が発生した場合、理由を記載すること
+
 ## 運用ルール
 
 1. 新しいプロジェクトを作成する際は、必ずこのドキュメントを更新する
@@ -61,3 +82,6 @@
 ## 更新履歴
 - 2025-06-23: 初版作成
 - 2025-06-23: HKカテゴリをDNカテゴリに修正（別PCでの運用に合わせる）、PC2025を注意事項に移動
+- 2025-06-24: WDカテゴリ（Web Development）追加、DN002_Learningrate追加、DN000からDN002へ番号修正
+- 2025-06-24: DN002重複解消のためDN002_MemoryandRewardをDN003_MemoryandRewardへ変更
+- 2025-06-24: WD105_ClaudeTools追加、欠番管理セクション追加、ルートディレクトリ散在ファイル整理
