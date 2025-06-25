@@ -17,7 +17,7 @@
 - **DM001_認知症研究**: 認知症に関する研究プロジェクト
 
 ### DN - 研究室関連（Department/Laboratory）
-- **DN001_TF**: 疋田研究室 頭部外傷（Traumatic Force）研究プロジェクト
+- **DN001_TF**: 疋田研究室 テーパードファイバー（Tapered Fiber）高次脳機能研究プロジェクト
 - **DN002_Learningrate**: 学習率に関する研究プロジェクト
 - **DN003_MemoryandReward**: 記憶と報酬に関する研究プロジェクト
 
