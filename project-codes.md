@@ -20,6 +20,7 @@
 - **DN001_TF**: 疋田研究室 テーパードファイバー（Tapered Fiber）高次脳機能研究プロジェクト
 - **DN002_Learningrate**: 学習率に関する研究プロジェクト
 - **DN003_MemoryandReward**: 記憶と報酬に関する研究プロジェクト
+- **DN004_research-shared-toolkit**: 研究用共有ツールキット（MATLAB）
 
 ### MD - 医師業務関連
 - **MD001_医師業務**: 医師業務に関するプロジェクト
@@ -41,6 +42,8 @@
 - **WD109_brain-3d-visualization**: 3Dドーパミン神経系可視化（React/Three.js）
 - **WD110_dopamine-flow-sankey**: ドーパミン経路フロー図（Vue.js/D3.js）
 - **WD111_brain-activity-heatmap**: 脳活動時空間ヒートマップ（FastAPI/Plotly）
+- **WD112_academic-website**: 学術用ウェブサイト（academic-images含む）
+- **WD113_my-website**: 個人ウェブサイト
 
 ### YA - 特定研究プロジェクト
 - **YA001_頭部外傷研究**: 頭部外傷に関する研究プロジェクト
@@ -48,6 +51,9 @@
 
 ### AD - Administration（事務・管理）
 - **AD001_SSD_Migration_Archive**: SSD移行用アーカイブ（個人文書等）
+
+### OT - Others（その他）
+- **OT000_Experimental**: 実験・テスト・練習用レポジトリ（分類未定のものを含む）
 
 ### 注意事項
 - **PC2025**: プロジェクトコードではない（当直中B/TRACS/TRACS template/内に存在する別の項目）
@@ -92,3 +98,4 @@
 - 2025-06-24: WD106_ChatGPT_Log_Converter追加（ChatGPT対話ログ変換ツール）
 - 2025-06-25: WD108-WD111追加（directory-project-codes、brain-viz、VueProject、PowerShellTools）
 - 2025-06-25: DN001を DN001_TF に変更、WD109-111の説明を実際の内容に合わせて更新
+- 2025-06-25: OTカテゴリ追加、WD112-113、DN004追加
