@@ -17,7 +17,7 @@
 - **DM001_認知症研究**: 認知症に関する研究プロジェクト
 
 ### DN - 研究室関連（Department/Laboratory）
-- **DN001_疋田研**: 疋田研究室関連のプロジェクト
+- **DN001_TF**: 疋田研究室 頭部外傷（Traumatic Force）研究プロジェクト
 - **DN002_Learningrate**: 学習率に関する研究プロジェクト
 - **DN003_MemoryandReward**: 記憶と報酬に関する研究プロジェクト
 
@@ -38,9 +38,9 @@
 - **WD106_ChatGPT_Log_Converter**: ChatGPT対話ログ→Obsidianマークダウン変換ツール
 - **WD107_PACVisualizer**: PAC（Phase-Amplitude Coupling）可視化ツール
 - **WD108_directory-project-codes**: プロジェクトコード管理システム
-- **WD109_brain-viz**: 脳活動可視化ツール（TypeScript）
-- **WD110_VueProject**: Vue.jsプロジェクト
-- **WD111_PowerShellTools**: PowerShellツール集
+- **WD109_brain-3d-visualization**: 3Dドーパミン神経系可視化（React/Three.js）
+- **WD110_dopamine-flow-sankey**: ドーパミン経路フロー図（Vue.js/D3.js）
+- **WD111_brain-activity-heatmap**: 脳活動時空間ヒートマップ（FastAPI/Plotly）
 
 ### YA - 特定研究プロジェクト
 - **YA001_頭部外傷研究**: 頭部外傷に関する研究プロジェクト
@@ -91,3 +91,4 @@
 - 2025-06-24: WD105_ClaudeTools追加、欠番管理セクション追加、ルートディレクトリ散在ファイル整理
 - 2025-06-24: WD106_ChatGPT_Log_Converter追加（ChatGPT対話ログ変換ツール）
 - 2025-06-25: WD108-WD111追加（directory-project-codes、brain-viz、VueProject、PowerShellTools）
+- 2025-06-25: DN001を DN001_TF に変更、WD109-111の説明を実際の内容に合わせて更新
