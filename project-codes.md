@@ -37,7 +37,7 @@
 - **WD110_dopamine-flow-sankey**: ドーパミン経路フロー図（Vue.js/D3.js）
 - **WD111_brain-activity-heatmap**: 脳活動時空間ヒートマップ（FastAPI/Plotly）
 - **WD112_academic-website**: 学術用ウェブサイト（academic-images含む）
-- **WD113_my-website**: 個人ウェブサイト
+- **WD113_obsidian-sync**: DellとSurfaceでObsidian連携
 
 ### YA - 特定研究プロジェクト
 - **YA001_頭部外傷研究**: 頭部外傷に関する研究プロジェクト
