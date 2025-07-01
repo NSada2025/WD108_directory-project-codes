@@ -4,17 +4,21 @@
 
 ## プロジェクト同期状況
 
-### プロジェクトコード付きリポジトリ（18個）
+### プロジェクトコード付きリポジトリ（22個）
 
 | GitHub | Dドライブ | 状態 | 推奨アクション |
 |--------|-----------|------|---------------|
 | DN001_PETH_GRABDA | - | GitHubのみ | Dドライブへクローン |
+| DN003_MemoryandReward | DN003_MemoryandReward | 両方に存在 | - |
 | DN001_TF | DN001_TF | 両方に存在 | - |
 | DN002_Learningrate | DN002_Learningrate | 両方に存在 | - |
 | DN004_research-shared-toolkit | - | GitHubのみ | Dドライブへクローン |
 | WD102_NeedsExplorer | WD102_NeedsExplorer | 両方に存在 | - |
 | WD103_EmployeeSimulation | WD103_EmployeeSimulation | 両方に存在 | - |
+| WD104_AssetManagement | WD104_AssetManagement | 両方に存在 | - |
 | WD105_Claude-Code-Communication | WD105_Claude-Code-Communication | 両方に存在 | - |
+| WD106_ChatGPT_Log_Converter | WD106_ChatGPT_Log_Converter | 両方に存在 | - |
+| WD107_PACVisualizer | WD107_PACVisualizer | 両方に存在 | - |
 | WD108_directory-project-codes | directory-project-codes | 名前不一致 | ディレクトリ名統一 |
 | WD109_brain-3d-visualization | WD109 | 名前不一致 | ディレクトリ名統一 |
 | WD110_dopamine-flow-sankey | WD110 | 名前不一致 | ディレクトリ名統一 |
@@ -22,10 +26,13 @@
 | WD112_academic-website | WD112_academic-website | 両方に存在 | - |
 | WD113_obsidian-sync | WD113_obsidian-sync | 両方に存在 | - |
 | WD114_tmux-multiagent-system | WD114_tmux-multiagent-system | 両方に存在 | - |
+| WD116_MATLABMEDxSupport | WD116_MATLABMEDxSupport | 両方に存在 | - |
 | WD115_GitHubReviewMastery | - | GitHubのみ | Dドライブへクローン |
 | WD117 | WD117_orthodontic-treatment-system | 名前不一致 | リポジトリ名統一 |
 | OT000_origin | - | GitHubのみ | Dドライブへクローン |
 | OT000_private-sandbox | - | GitHubのみ | Dドライブへクローン |
+| TM001_my-ai-team | TM001_my-ai-team | 両方に存在 | - |
+| TM002_tmux-claude-instructions | TM002_tmux-claude-instructions | 両方に存在 | - |
 
 ### プロジェクトコードなしリポジトリ（8個）
 
@@ -40,20 +47,13 @@
 | stable-baselines3 | - | GitHubのみ（fork） | - |
 | yurukagaku | - | GitHubのみ | プロジェクトコード付与 |
 
-### Dドライブのみに存在するディレクトリ（11個）
+### Dドライブのみに存在するディレクトリ（4個）
 
 **プロジェクトコード付き（要GitHub作成）**
 
 | ディレクトリ名 | 推奨アクション | 優先度 |
 |---------------|----------------|--------|
-| WD104_AssetManagement | GitHubリポジトリ作成 | 高 |
-| WD106_ChatGPT_Log_Converter | GitHubリポジトリ作成 | 中 |
-| WD107_PACVisualizer | GitHubリポジトリ作成 | 高 |
-| WD116_MATLABMEDxSupport | GitHubリポジトリ作成 | 高 |
 | DN001_Programs | DN001_PETH_GRABDAと統合検討 | 中 |
-| DN003_MemoryandReward | GitHubリポジトリ作成 | 中 |
-| TM001_my-ai-team | GitHubリポジトリ作成 | 低 |
-| TM002_tmux-claude-instructions | GitHubリポジトリ作成 | 低 |
 
 **プロジェクトコードなし（要改名）**
 
@@ -100,6 +100,10 @@
 
 ### OT - Others（その他）
 - **OT000_Experimental**: 実験・テスト・練習用レポジトリ（分類未定のものを含む）
+
+### TM - Tmux MultiAgent（tmuxマルチエージェント）
+- **TM001_my-ai-team**: tmuxマルチエージェントシステム
+- **TM002_tmux-claude-instructions**: tmux Claude指示書管理システム
 
 ### プロジェクトコードなしディレクトリ（今後整理予定）
 
