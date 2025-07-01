@@ -45,12 +45,12 @@ echo "╔═══════════════════════�
 echo "║          デスクトップディレクトリ整理スクリプト          ║"
 echo "╚══════════════════════════════════════════════════════════╝"
 echo ""
-echo "📁 対象ディレクトリ: $DESKTOP_PATH"
-echo "📄 コードファイル: $PROJECT_CODES_FILE"
+echo "対象ディレクトリ: $DESKTOP_PATH"
+echo "コードファイル: $PROJECT_CODES_FILE"
 echo ""
 
 # プロジェクトコードパターンにマッチするディレクトリを検索
-echo "🔍 プロジェクトコード準拠ディレクトリ:"
+echo "プロジェクトコード準拠ディレクトリ:"
 echo "----------------------------------------"
 CODE_DIRS=$(find "$DESKTOP_PATH" -maxdepth 1 -type d -name "[A-Z][A-Z][0-9][0-9][0-9]*" 2>/dev/null | sort)
 if [ -z "$CODE_DIRS" ]; then
@@ -60,16 +60,16 @@ else
         dir_name=$(basename "$dir")
         # トークン消費特性を取得
         if grep -q "$dir_name" "$PROJECT_CODES_FILE" 2>/dev/null; then
-            token_type=$(grep "$dir_name" "$PROJECT_CODES_FILE" | grep -oE "🔴|🟡|🟢" | head -1)
-            echo "  ✅ $dir_name $token_type"
+            token_type=$(grep "$dir_name" "$PROJECT_CODES_FILE" | grep -oE "高|中|低" | head -1)
+            echo "  $dir_name $token_type"
         else
-            echo "  ⚠️  $dir_name (未登録)"
+            echo "  警告:  $dir_name (未登録)"
         fi
     done
 fi
 
 echo ""
-echo "❌ プロジェクトコード非準拠ディレクトリ:"
+echo "プロジェクトコード非準拠ディレクトリ:"
 echo "----------------------------------------"
 NON_CODE_DIRS=$(find "$DESKTOP_PATH" -maxdepth 1 -type d ! -name ".*" ! -name "[A-Z][A-Z][0-9][0-9][0-9]*" ! -path "$DESKTOP_PATH" 2>/dev/null | sort)
 if [ -z "$NON_CODE_DIRS" ]; then
@@ -77,26 +77,26 @@ if [ -z "$NON_CODE_DIRS" ]; then
 else
     echo "$NON_CODE_DIRS" | while read dir; do
         dir_name=$(basename "$dir")
-        echo "  ❗ $dir_name"
+        echo "  ! $dir_name"
     done
 fi
 
 echo ""
-echo "💡 整理の提案:"
+echo "整理の提案:"
 echo "══════════════════════════════════════════════════════════"
 echo ""
-echo "📋 推奨アクション:"
+echo "推奨アクション:"
 echo "  1. プロジェクトコード非準拠ディレクトリに適切なコードを割り当て"
 echo "  2. project-codes.mdファイルを更新して新しいコードを記録"
 echo "  3. 不要なファイルはArchiveフォルダに移動を検討"
-echo "  4. トークン消費特性（🔴🟡🟢）を考慮した作業計画を立案"
+echo "  4. トークン消費特性（高中低）を考慮した作業計画を立案"
 
 # 新規プロジェクトコード生成支援
 echo ""
-echo "🆕 新規プロジェクトコード生成支援:"
+echo "新規プロジェクトコード生成支援:"
 echo "══════════════════════════════════════════════════════════"
 echo ""
-echo "📂 既存のカテゴリ:"
+echo "既存のカテゴリ:"
 if [ -f "$PROJECT_CODES_FILE" ]; then
     CATEGORIES=$(grep -E "^### [A-Z]{2} -" "$PROJECT_CODES_FILE" 2>/dev/null)
     if [ -z "$CATEGORIES" ]; then
@@ -105,15 +105,15 @@ if [ -f "$PROJECT_CODES_FILE" ]; then
         echo "$CATEGORIES" | while read line; do
             category=$(echo "$line" | sed 's/### \([A-Z][A-Z]\) - \(.*\)/\1/')
             description=$(echo "$line" | sed 's/### \([A-Z][A-Z]\) - \(.*\)/\2/')
-            echo "  • $category - $description"
+            echo "  $category - $description"
         done
     fi
 else
-    echo "  ⚠️  プロジェクトコードファイルが見つかりません"
+    echo "  警告:  プロジェクトコードファイルが見つかりません"
 fi
 
 echo ""
-echo "🔢 使用可能な次の番号:"
+echo "使用可能な次の番号:"
 echo "------------------------"
 PREFIXES=$(find "$DESKTOP_PATH" -maxdepth 1 -type d -name "[A-Z][A-Z][0-9][0-9][0-9]*" 2>/dev/null | sed 's/.*\/\([A-Z][A-Z]\)[0-9].*/\1/' | sort -u)
 if [ -z "$PREFIXES" ]; then
@@ -124,23 +124,23 @@ else
     for prefix in $PREFIXES; do
         last_num=$(find "$DESKTOP_PATH" -maxdepth 1 -type d -name "${prefix}[0-9][0-9][0-9]*" 2>/dev/null | sed "s/.*\/${prefix}\([0-9]\{3\}\).*/\1/" | sort -n | tail -1)
         next_num=$(printf "%03d" $((10#$last_num + 1)))
-        echo "  → ${prefix}${next_num}"
+        echo "  ${prefix}${next_num}"
     done
 fi
 
 # 統計情報の表示（オプション）
 if [ -f "$PROJECT_CODES_FILE" ]; then
     echo ""
-    echo "📊 トークン消費特性別統計:"
+    echo "トークン消費特性別統計:"
     echo "------------------------"
-    high_count=$(grep -c "🔴" "$PROJECT_CODES_FILE" 2>/dev/null || echo "0")
-    mid_count=$(grep -c "🟡" "$PROJECT_CODES_FILE" 2>/dev/null || echo "0")
-    low_count=$(grep -c "🟢" "$PROJECT_CODES_FILE" 2>/dev/null || echo "0")
-    echo "  🔴 高トークン消費: $high_count プロジェクト"
-    echo "  🟡 中トークン消費: $mid_count プロジェクト"
-    echo "  🟢 低トークン消費: $low_count プロジェクト"
+    high_count=$(grep -c "高" "$PROJECT_CODES_FILE" 2>/dev/null || echo "0")
+    mid_count=$(grep -c "中" "$PROJECT_CODES_FILE" 2>/dev/null || echo "0")
+    low_count=$(grep -c "低" "$PROJECT_CODES_FILE" 2>/dev/null || echo "0")
+    echo "  高トークン消費: $high_count プロジェクト"
+    echo "  中トークン消費: $mid_count プロジェクト"
+    echo "  低トークン消費: $low_count プロジェクト"
 fi
 
 echo ""
 echo "══════════════════════════════════════════════════════════"
-echo "✅ スクリプト実行完了"
+echo "スクリプト実行完了"
