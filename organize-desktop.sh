@@ -58,10 +58,8 @@ if [ -z "$CODE_DIRS" ]; then
 else
     echo "$CODE_DIRS" | while read dir; do
         dir_name=$(basename "$dir")
-        # トークン消費特性を取得
         if grep -q "$dir_name" "$PROJECT_CODES_FILE" 2>/dev/null; then
-            token_type=$(grep "$dir_name" "$PROJECT_CODES_FILE" | grep -oE "高|中|低" | head -1)
-            echo "  $dir_name $token_type"
+            echo "  $dir_name"
         else
             echo "  警告:  $dir_name (未登録)"
         fi
@@ -89,7 +87,6 @@ echo "推奨アクション:"
 echo "  1. プロジェクトコード非準拠ディレクトリに適切なコードを割り当て"
 echo "  2. project-codes.mdファイルを更新して新しいコードを記録"
 echo "  3. 不要なファイルはArchiveフォルダに移動を検討"
-echo "  4. トークン消費特性（高中低）を考慮した作業計画を立案"
 
 # 新規プロジェクトコード生成支援
 echo ""
@@ -128,18 +125,6 @@ else
     done
 fi
 
-# 統計情報の表示（オプション）
-if [ -f "$PROJECT_CODES_FILE" ]; then
-    echo ""
-    echo "トークン消費特性別統計:"
-    echo "------------------------"
-    high_count=$(grep -c "高" "$PROJECT_CODES_FILE" 2>/dev/null || echo "0")
-    mid_count=$(grep -c "中" "$PROJECT_CODES_FILE" 2>/dev/null || echo "0")
-    low_count=$(grep -c "低" "$PROJECT_CODES_FILE" 2>/dev/null || echo "0")
-    echo "  高トークン消費: $high_count プロジェクト"
-    echo "  中トークン消費: $mid_count プロジェクト"
-    echo "  低トークン消費: $low_count プロジェクト"
-fi
 
 echo ""
 echo "══════════════════════════════════════════════════════════"
