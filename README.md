@@ -4,7 +4,7 @@
 
 ## プロジェクト同期状況
 
-### プロジェクトコード付きリポジトリ（22個）
+### プロジェクトコード付きリポジトリ（25個）
 
 | GitHub | Dドライブ | 状態 | 推奨アクション |
 |--------|-----------|------|---------------|
@@ -29,6 +29,9 @@
 | WD116_MATLABMEDxSupport | WD116_MATLABMEDxSupport | 両方に存在 | - |
 | WD115_GitHubReviewMastery | - | GitHubのみ | Dドライブへクローン |
 | WD117 | WD117_orthodontic-treatment-system | 名前不一致 | リポジトリ名統一 |
+| WD118_PersonalInvestmentTracker | WD118_PersonalInvestmentTracker | 両方に存在 | - |
+| WD119_discord_API | WD119_discord_API | 両方に存在 | - |
+| WD120_DiscordIntegration | WD120_DiscordIntegration | 両方に存在 | - |
 | OT000_origin | - | GitHubのみ | Dドライブへクローン |
 | OT000_private-sandbox | - | GitHubのみ | Dドライブへクローン |
 | TM001_my-ai-team | TM001_my-ai-team | 両方に存在 | - |
@@ -89,6 +92,10 @@
 - **WD114_tmux-multiagent-system**: tmuxマルチエージェント協調システム
 - **WD115_GitHubReviewMastery**: GitHub PR レビュー＆トラブルシューティング技術習得プロジェクト
 - **WD116_MEDx-AutoMapper**: MEDxファイル英字→数字対応表自動生成システム
+- **WD117_orthodontic-treatment-system**: 矯正歯科治療システム（大規模プロジェクト）
+- **WD118_PersonalInvestmentTracker**: 個人投資追跡システム
+- **WD119_discord_API**: Discord API統合プロジェクト
+- **WD120_DiscordIntegration**: Discord統合システム
 
 ### DN - Department/Laboratory（研究室関連）
 - **DN001_TF**: 疋田研究室 テーパードファイバー（Tapered Fiber）高次脳機能研究プロジェクト
@@ -187,6 +194,6 @@ git pull origin main
 
 ---
 
-**最終更新**: 2025年7月1日  
+**最終更新**: 2025年7月14日  
 **管理者**: NSada2025  
-**バージョン**: v3.0（統合版）
+**バージョン**: v3.1（WD117-120追加）
