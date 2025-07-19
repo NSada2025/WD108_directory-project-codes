@@ -1,0 +1,44 @@
+{
+  "name": "WD108 Ephemeral Project Management",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  
+  // Features to add to the dev container
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/common-utils:2": {}
+  },
+  
+  // Configure tool-specific properties
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "git.autofetch": true,
+        "git.confirmSync": false
+      },
+      "extensions": [
+        "ms-vscode.vscode-github-pull-request-github",
+        "eamodio.gitlens",
+        "streetsidesoftware.code-spell-checker",
+        "yzhang.markdown-all-in-one",
+        "davidanson.vscode-markdownlint"
+      ]
+    }
+  },
+  
+  // Use 'postCreateCommand' to run commands after the container is created
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  
+  // Environment variables
+  "remoteEnv": {
+    "EPHEMERAL_ENV": "true",
+    "PROJECT_CODE_SYSTEM": "WD108"
+  },
+  
+  // Forward ports if needed
+  "forwardPorts": [],
+  
+  // Comment out to connect as root instead
+  "remoteUser": "vscode"
+}

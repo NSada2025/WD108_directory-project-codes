@@ -1,0 +1,44 @@
+# Gitpod configuration for ephemeral development environment
+# エフェメラル開発環境用Gitpod設定
+
+tasks:
+  - name: Initialize Project Code Management System
+    init: |
+      echo "🚀 Setting up ephemeral workspace for WD108..."
+      git config --global user.name "$GITPOD_GIT_USER_NAME"
+      git config --global user.email "$GITPOD_GIT_USER_EMAIL"
+      
+      # Install useful tools
+      sudo apt-get update -q
+      sudo apt-get install -y jq tree
+      
+      echo "✅ Environment setup complete!"
+    command: |
+      echo "📋 Project Code Management System Ready"
+      echo "=================================="
+      echo ""
+      echo "Available commands:"
+      echo "  ./scripts/sync-projects.sh    - Sync project codes across repositories"
+      echo "  ./scripts/list-projects.sh    - List all project codes"
+      echo "  ./scripts/cleanup.sh          - Clean up temporary files"
+      echo ""
+      echo "📌 Remember: This is an ephemeral environment"
+      echo "   All changes must be committed and pushed before closing!"
+
+# Open README automatically
+github:
+  prebuilds:
+    master: true
+    branches: true
+    pullRequests: true
+    pullRequestsFromForks: true
+    addCheck: true
+    addBadge: true
+
+# VS Code extensions for better experience
+vscode:
+  extensions:
+    - ms-vscode.vscode-github-pull-request-github
+    - eamodio.gitlens
+    - streetsidesoftware.code-spell-checker
+    - yzhang.markdown-all-in-one
