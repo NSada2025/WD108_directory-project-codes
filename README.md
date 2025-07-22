@@ -4,15 +4,16 @@
 
 ## プロジェクト同期状況
 
-### プロジェクトコード付きリポジトリ（25個）
+### プロジェクトコード付きリポジトリ（26個）
 
 | GitHub | Dドライブ | 状態 | 推奨アクション |
 |--------|-----------|------|---------------|
-| DN001_PETH_GRABDA | - | GitHubのみ | Dドライブへクローン |
-| DN003_MemoryandReward | DN003_MemoryandReward | 両方に存在 | - |
+| DN001_PETH_GRABDA | DN001_PETH_GRABDA | 両方に存在 | - |
+| DN001_Programs | DN001_Programs | 両方に存在 | - |
 | DN001_TF | DN001_TF | 両方に存在 | - |
 | DN002_Learningrate | DN002_Learningrate | 両方に存在 | - |
-| DN004_research-shared-toolkit | - | GitHubのみ | Dドライブへクローン |
+| DN003_MemoryandReward | DN003_MemoryandReward | 両方に存在 | - |
+| DN004_research-shared-toolkit | DN004_research-shared-toolkit | 両方に存在 | - |
 | WD102_NeedsExplorer | WD102_NeedsExplorer | 両方に存在 | - |
 | WD103_EmployeeSimulation | WD103_EmployeeSimulation | 両方に存在 | - |
 | WD104_AssetManagement | WD104_AssetManagement | 両方に存在 | - |
@@ -27,13 +28,13 @@
 | WD113_obsidian-sync | WD113_obsidian-sync | 両方に存在 | - |
 | WD114_tmux-multiagent-system | WD114_tmux-multiagent-system | 両方に存在 | - |
 | WD116_MATLABMEDxSupport | WD116_MATLABMEDxSupport | 両方に存在 | - |
-| WD115_GitHubReviewMastery | - | GitHubのみ | Dドライブへクローン |
+| WD115_GitHubReviewMastery | WD115_GitHubReviewMastery | 両方に存在 | - |
 | WD117 | WD117_orthodontic-treatment-system | 名前不一致 | リポジトリ名統一 |
 | WD118_PersonalInvestmentTracker | WD118_PersonalInvestmentTracker | 両方に存在 | - |
 | WD119_discord_API | WD119_discord_API | 両方に存在 | - |
 | WD120_DiscordIntegration | WD120_DiscordIntegration | 両方に存在 | - |
-| OT000_origin | - | GitHubのみ | Dドライブへクローン |
-| OT000_private-sandbox | - | GitHubのみ | Dドライブへクローン |
+| OT000_origin | - | GitHubのみ（未存在） | 新規作成検討 |
+| OT000_private-sandbox | OT000_private-sandbox | 両方に存在 | - |
 | TM001_my-ai-team | TM001_my-ai-team | 両方に存在 | - |
 | TM002_tmux-claude-instructions | TM002_tmux-claude-instructions | 両方に存在 | - |
 
@@ -56,7 +57,7 @@
 
 | ディレクトリ名 | 推奨アクション | 優先度 |
 |---------------|----------------|--------|
-| DN001_Programs | DN001_PETH_GRABDAと統合検討 | 中 |
+| DN001_Programs | GitHubリポジトリ作成完了 | 完了 |
 
 **プロジェクトコードなし（要改名）**
 
@@ -87,7 +88,7 @@
 - **WD109_brain-3d-visualization**: 3Dドーパミン神経系可視化（React/Three.js）
 - **WD110_dopamine-flow-sankey**: ドーパミン経路フロー図（Vue.js/D3.js）
 - **WD111_brain-activity-heatmap**: 脳活動時空間ヒートマップ（FastAPI/Plotly）
-- **WD112_academic-website**: 学術用ウェブサイト（SCSS、academic-images含む）
+- **WD112_academic-website**: 学術用ウェブサイト・プレゼンテーション管理（SCSS、academic-images、presentations含む）
 - **WD113_obsidian-sync**: DellとSurfaceでObsidian連携
 - **WD114_tmux-multiagent-system**: tmuxマルチエージェント協調システム
 - **WD115_GitHubReviewMastery**: GitHub PR レビュー＆トラブルシューティング技術習得プロジェクト
@@ -98,8 +99,11 @@
 - **WD120_DiscordIntegration**: Discord統合システム
 
 ### DN - Department/Laboratory（研究室関連）
+- **DN001_PETH_GRABDA**: PETH（Peri-Event Time Histogram）とGRABDA（Genetically Encoded Calcium Indicator）解析統合システム
+- **DN001_Programs**: 光ファイバーフォトメトリー（BFP）解析用MATLABスクリプト群
 - **DN001_TF**: 疋田研究室 テーパードファイバー（Tapered Fiber）高次脳機能研究プロジェクト
 - **DN002_Learningrate**: 学習率に関する研究プロジェクト
+- **DN003_MemoryandReward**: 記憶と報酬の神経機構研究プロジェクト
 - **DN004_research-shared-toolkit**: 研究用共有ツールキット（MATLAB）
 
 ### AD - Administration（事務・管理）
@@ -109,8 +113,8 @@
 - **OT000_Experimental**: 実験・テスト・練習用レポジトリ（分類未定のものを含む）
 
 ### TM - Tmux MultiAgent（tmuxマルチエージェント）
-- **TM001_my-ai-team**: tmuxマルチエージェントシステム
-- **TM002_tmux-claude-instructions**: tmux Claude指示書管理システム
+- **TM001_my-ai-team**: tmuxマルチエージェントシステム（WD114と統合完了）
+- **TM002_tmux-claude-instructions**: tmux Claude指示書管理システム（統合版へ移行）
 
 ### プロジェクトコードなしディレクトリ（今後整理予定）
 
@@ -194,6 +198,6 @@ git pull origin main
 
 ---
 
-**最終更新**: 2025年7月14日  
+**最終更新**: 2025年7月15日  
 **管理者**: NSada2025  
-**バージョン**: v3.1（WD117-120追加）
+**バージョン**: v3.2（DN001_Programs追加、クローン状況更新、TM001/TM002統合状況反映）
