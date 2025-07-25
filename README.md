@@ -104,6 +104,13 @@
 - **WD123_clinicalAI**: 臨床AI
 - **WD124_web-pitfalls-multiagent**: Web落とし穴マルチエージェント
 - **WD125_investment-management-system**: 投資管理システム
+- **WD126_future-work-style**: Claude Codeを活用した未来の働き方プロジェクト
+- **WD127_vive-paradigm-platform**: Vive Paradigm実践プラットフォーム（創造の民主化）
+- **WD128_realtime-voice-coding**: 音声議論からのリアルタイムコード生成システム
+- **WD129_biorhythm-task-optimizer**: バイタルサイン連動型タスク最適化システム
+- **WD130_vive-security-essentials**: Vive Coding時代のセキュリティ知識大全
+- **WD131_ai-architecture-memory**: AIコーディングのシステム一貫性維持機構
+- **WD132_project-vitality-system**: プロジェクト活性化・継続性維持システム
 
 ### DN - Department/Laboratory（研究室関連）
 - **DN001_PETH_GRABDA**: PETH（Peri-Event Time Histogram）とGRABDA（Genetically Encoded Calcium Indicator）解析統合システム
@@ -123,6 +130,7 @@
 ### TM - Tmux MultiAgent（tmuxマルチエージェント）
 - **TM001_my-ai-team**: tmuxマルチエージェントシステム（WD114と統合完了）
 - **TM002_tmux-claude-instructions**: tmux Claude指示書管理システム（統合版へ移行）
+- **TM003_personality-agents**: パーソナリティ型マルチエージェントシステム
 
 ### MA - Manus AI（Manus AI関連）
 - **MA000_ManusAI_Slides**: Manus AI用スライド統一管理
@@ -211,4 +219,4 @@ git pull origin main
 
 **最終更新**: 2025年7月25日  
 **管理者**: NSada2025  
-**バージョン**: v3.3（WD121-125追加、DN005追加、MA000新規カテゴリー追加）
+**バージョン**: v3.7（WD126-132, TM003追加）
