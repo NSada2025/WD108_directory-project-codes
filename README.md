@@ -4,7 +4,7 @@
 
 ## プロジェクト同期状況
 
-### プロジェクトコード付きリポジトリ（26個）
+### プロジェクトコード付きリポジトリ（28個）
 
 | GitHub | Dドライブ | 状態 | 推奨アクション |
 |--------|-----------|------|---------------|
@@ -33,6 +33,8 @@
 | WD118_PersonalInvestmentTracker | WD118_PersonalInvestmentTracker | 両方に存在 | - |
 | WD119_discord_API | WD119_discord_API | 両方に存在 | - |
 | WD120_DiscordIntegration | WD120_DiscordIntegration | 両方に存在 | - |
+| WD121_Claude-Discord-Bridge | WD121_discord_bot_management | 名前不一致 | ディレクトリ名統一 |
+| WD122_discord-multiagent-control | WD122_discord-multiagent-control | 両方に存在 | - |
 | OT000_origin | - | GitHubのみ（未存在） | 新規作成検討 |
 | OT000_private-sandbox | OT000_private-sandbox | 両方に存在 | - |
 | TM001_my-ai-team | TM001_my-ai-team | 両方に存在 | - |
@@ -74,7 +76,7 @@
 | 項目 | 説明 | 例 |
 |------|------|----|
 | **形式** | `XX###_プロジェクト名` | WD108_directory-project-codes |
-| **XX** | 英字2文字（プロジェクトカテゴリ） | WD, DN, AD, OT |
+| **XX** | 英字2文字（プロジェクトカテゴリ） | WD, DN, AD, OT, TM, MA |
 | **###** | 3桁数字（001から始まる連番） | 001, 002, 103 |
 
 ### WD - Web Development（ウェブ開発）
@@ -97,6 +99,11 @@
 - **WD118_PersonalInvestmentTracker**: 個人投資追跡システム
 - **WD119_discord_API**: Discord API統合プロジェクト
 - **WD120_DiscordIntegration**: Discord統合システム
+- **WD121_discord_bot_management**: Discord Bot管理
+- **WD122_discord-multiagent-control**: Discord マルチエージェント制御
+- **WD123_clinicalAI**: 臨床AI
+- **WD124_web-pitfalls-multiagent**: Web落とし穴マルチエージェント
+- **WD125_investment-management-system**: 投資管理システム
 
 ### DN - Department/Laboratory（研究室関連）
 - **DN001_PETH_GRABDA**: PETH（Peri-Event Time Histogram）とGRABDA（Genetically Encoded Calcium Indicator）解析統合システム
@@ -105,6 +112,7 @@
 - **DN002_Learningrate**: 学習率に関する研究プロジェクト
 - **DN003_MemoryandReward**: 記憶と報酬の神経機構研究プロジェクト
 - **DN004_research-shared-toolkit**: 研究用共有ツールキット（MATLAB）
+- **DN005_TaperedFiber_Slides**: テーパードファイバー実験スライド資料
 
 ### AD - Administration（事務・管理）
 - **AD001_SSD_Migration_Archive**: SSD移行用アーカイブ（個人文書等）
@@ -115,6 +123,9 @@
 ### TM - Tmux MultiAgent（tmuxマルチエージェント）
 - **TM001_my-ai-team**: tmuxマルチエージェントシステム（WD114と統合完了）
 - **TM002_tmux-claude-instructions**: tmux Claude指示書管理システム（統合版へ移行）
+
+### MA - Manus AI（Manus AI関連）
+- **MA000_ManusAI_Slides**: Manus AI用スライド統一管理
 
 ### プロジェクトコードなしディレクトリ（今後整理予定）
 
@@ -198,6 +209,6 @@ git pull origin main
 
 ---
 
-**最終更新**: 2025年7月15日  
+**最終更新**: 2025年7月25日  
 **管理者**: NSada2025  
-**バージョン**: v3.2（DN001_Programs追加、クローン状況更新、TM001/TM002統合状況反映）
+**バージョン**: v3.3（WD121-125追加、DN005追加、MA000新規カテゴリー追加）
